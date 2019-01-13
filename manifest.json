@@ -1,0 +1,15 @@
+{
+	"name" : "Измена", 
+	  "version": "1.0",
+  "manifest_version": 2,
+	"description" : "123123123",
+	"background_page" : "background.html",
+	"content_scripts" : [
+    {
+        "matches": [ "*://*/*" ],
+        "js": [ "jquery.js","my_script.js" ],
+        
+        "run_at": "document_start"
+    }
+]
+}
